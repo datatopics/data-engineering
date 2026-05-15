@@ -1,0 +1,11 @@
+services:
+  streamlit:
+    build:
+      context: .
+      dockerfile: platform/streamlit/Dockerfile
+    container_name: datatopics-streamlit
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./platform/streamlit:/app
+    restart: unless-stopped
