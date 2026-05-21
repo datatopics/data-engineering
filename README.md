@@ -1,6 +1,8 @@
 # DataTopics • Data Engineering
 
-Modern, open source and hands-on data engineering course focused on real-world engineering practices.
+Modern, open source and project-based data engineering learning platform focused on real-world engineering practices.
+
+---
 
 ## Philosophy
 
@@ -8,14 +10,36 @@ This project was designed to teach modern data engineering through a progressive
 
 Instead of isolated tutorials, students build and evolve a complete local data platform using modern open source tools and real-world datasets.
 
-The course focuses on:
+The course structure combines:
 
-- Engineering-first mindset
-- Local-first architecture
-- Open source technologies
-- Real-world workflows
-- Project-based learning
-- Incremental platform evolution
+* Project-Based Learning (PBL)
+* Incremental engineering practices
+* Experiential learning
+* Gamified progression systems
+
+Core principles:
+
+* Engineering-first mindset
+* Local-first architecture
+* Open source technologies
+* Real-world workflows
+* Incremental platform evolution
+* Autonomous problem solving
+
+---
+
+## Learning Platform
+
+The repository includes an interactive learning platform built with Streamlit.
+
+Current platform features:
+
+* Learner dashboard
+* Repository analysis
+* Progress tracking
+* Automatic module validation
+* Multilingual documentation support
+* Incremental course progression
 
 ---
 
@@ -23,31 +47,49 @@ The course focuses on:
 
 Throughout the course, students progressively build a modern local data platform capable of:
 
-- Batch data ingestion
-- API integrations
-- Distributed processing
-- Streaming pipelines
-- Data modeling
-- Orchestration
-- Lakehouse architectures
-- Analytical transformations
-- Operational monitoring
+* Batch data ingestion
+* API integrations
+* Distributed processing
+* Streaming pipelines
+* Data modeling
+* Orchestration
+* Lakehouse architectures
+* Analytical transformations
+* Operational monitoring
 
 ---
 
 ## Tech Stack
 
-- Python
-- SQL
-- Docker
-- PostgreSQL
-- DuckDB
-- PySpark
-- dbt
-- Apache Airflow
-- Apache Kafka
-- Apache Iceberg
-- Streamlit
+### Languages
+
+* Python
+* SQL
+
+### Infrastructure
+
+* Docker
+* Docker Compose
+
+### Databases & Storage
+
+* PostgreSQL
+* DuckDB
+* Apache Iceberg
+
+### Processing & Transformation
+
+* PySpark
+* dbt
+
+### Orchestration & Streaming
+
+* Apache Airflow
+* Apache Kafka
+
+### Platform & Visualization
+
+* Streamlit
 
 ---
 
@@ -55,9 +97,13 @@ Throughout the course, students progressively build a modern local data platform
 
 Before starting, make sure you have installed:
 
-- Git
-- Docker Desktop
-- VSCode
+* Git
+* Docker Desktop
+* VSCode
+
+Recommended:
+
+* WSL2 (Windows users)
 
 ---
 
@@ -86,12 +132,41 @@ docker compose up
 
 ---
 
-### 4. Open the course dashboard
+### 4. Open the learning platform
 
 Open your browser at:
 
 ```text
 http://localhost:8501
+```
+
+---
+
+## Repository Structure
+
+```text
+course/       # Course modules and learner progress
+docs/         # Multilingual documentation
+platform/     # Streamlit learning platform
+tooling/      # Validators and automation tooling
+```
+
+---
+
+## Development Workflow
+
+This project uses:
+
+* uv for dependency management
+* Ruff for linting and formatting
+* pre-commit for local validation
+
+Run validations locally:
+
+```bash
+uv run ruff check .
+uv run ruff format .
+uv run pre-commit run --all-files
 ```
 
 ---
