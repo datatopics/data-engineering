@@ -1,6 +1,6 @@
 FROM python:3.12-slim
 
-WORKDIR /app
+WORKDIR /workspace/platform/streamlit
 
 COPY pyproject.toml uv.lock /tmp/
 
@@ -14,4 +14,4 @@ COPY platform/streamlit/app.py /app/app.py
 
 EXPOSE 8501
 
-CMD ["streamlit", "run", "app.py", "--server.address=0.0.0.0"]
+CMD ["streamlit", "run", "app.py", "--server.address=0.0.0.0", "--server.fileWatcherType=poll"]
