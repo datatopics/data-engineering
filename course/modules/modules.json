@@ -1,0 +1,57 @@
+[
+  {
+    "id": "foundations",
+    "order": 0,
+    "title": "Foundations"
+  },
+  {
+    "id": "sql",
+    "order": 1,
+    "title": "SQL"
+  },
+  {
+    "id": "data_modeling",
+    "order": 2,
+    "title": "Data Modeling"
+  },
+  {
+    "id": "batch_processing",
+    "order": 3,
+    "title": "Batch Processing"
+  },
+  {
+    "id": "spark",
+    "order": 4,
+    "title": "Spark"
+  },
+  {
+    "id": "dbt",
+    "order": 5,
+    "title": "dbt"
+  },
+  {
+    "id": "airflow",
+    "order": 6,
+    "title": "Airflow"
+  },
+  {
+    "id": "streaming",
+    "order": 7,
+    "title": "Streaming"
+  },
+  {
+    "id": "lakehouse",
+    "order": 8,
+    "title": "Lakehouse"
+  },
+  {
+    "id": "operations",
+    "order": 9,
+    "title": "Operations"
+  },
+  {
+    "id": "final_project",
+    "order": 10,
+    "title": "Final Project"
+  }
+]
